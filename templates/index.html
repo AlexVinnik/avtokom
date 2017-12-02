@@ -3,29 +3,36 @@
         <meta charset="utf-8">
         <title>Index</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+
+        <style type="text/css">
+  body {
+    background-color: #FFFFFF;
+  }
+  .ui.menu .item img.logo {
+    margin-right: 1.5em;
+  }
+  .main.container {
+    margin-top: 7em;
+  }
+  .wireframe {
+    margin-top: 2em;
+  }
+  .ui.footer.segment {
+    margin: 5em 0em 0em;
+    padding: 5em 0em;
+  }
+  </style>
+
     </head>
     <body>
-        <header>
-            <div class="ui container">
-                Search and login
-            </div>
-        </header>
-        <div class="">Main content</div>
-        <footer>
-            <div class="ui container">
-                <div class="ui stackable inverted divided equal height stackable grid">
-                    <div class="three wide column">
-                        1
-                    </div>
-                    <div class="three wide column">
-                        2
-                    </div>
-                    <div class="seven wide column">
-                        3
-                    </div>
-                </div>
-            </div>
-        </footer>
+
+            {% include 'navbar.html' %}
+
+            {% block content %}
+
+            {% endblock content %}
+
+            {% include 'footer.html' %}
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
